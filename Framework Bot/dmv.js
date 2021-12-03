@@ -22,13 +22,12 @@ module.exports.run = async(client, message, args) => {
                 let embed = new MessageEmbed();
                 embed.setColor(config.embed.color)
                 embed.setFooter(config.embed.footer)
-                embed.setTitle(`Below are the result found for ${member.user.tag}`)
+                embed.setDescription(`Below are the DMV Results for ${member.user.tag} (ID: ${member.user.id})\n\nThe number in the brackets after the plate is the Vehicle ID.`)
                 embed.setTimestamp()
                 reslove.forEach(veh => {
                     embed.addField(`Name`, `${veh.first} ${veh.last}`, true)
                     embed.addField(`Type`, veh.type, true)
-                    embed.addField(`Plate`, veh.plate, true)
-                    embed.addField(`Vehicle ID`, veh.vecid, true)
+                    embed.addField(`Plate`, `${veh.plate} (${veh.vecid})`, true)
                 })
                 message.channel.send(embed)
             }
