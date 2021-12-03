@@ -7,7 +7,12 @@ This discord.js command will only work for those who own NAT2K15's [DMV Script](
 
 # How to install
 
-Simply drag and drop into the commands folder, restart your bot and boom!
+Simply drag and drop into the commands folder (Pick the right command), restart your bot and boom!
+
+### Usage
+```!dmv <discordid>```
+Please do it without the <>
+Replace `!` with your prefix set in the config.
 
 # Credits
 Credit to [NAT2K15](https://discord.gg/nat2k15) for the use of his products.
