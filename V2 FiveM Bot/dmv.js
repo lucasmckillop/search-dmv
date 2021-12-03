@@ -28,6 +28,7 @@ module.exports.run = async(client, message, args) => {
                     embed.addField(`Name`, `${veh.first} ${veh.last}`, true)
                     embed.addField(`Type`, veh.type, true)
                     embed.addField(`Plate`, veh.plate, true)
+                    embed.addField(`Vehicle ID`, veh.vecid, true)
                 })
                 message.channel.send(embed)
             }
